@@ -50,7 +50,8 @@ body {
     height: 100vh;
     display: flex;
     align-items: center;
-    padding: 0 10%;
+    padding: 10%;
+    
 }
 .home-content {
     background: transparent;
@@ -138,4 +139,88 @@ color: #00abf0;
 
 .btn-box a:hover:before{
     width: 100%;
+}
+
+.home-sci {
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #00abf0;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.home-sci a :hover{
+    color: #081b29;
+}
+
+.home-sci a::before {
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background:#00abf0;
+    z-index: -1;
+    transition: .5s;
+}
+.home-sci a:hover::before{
+width: 100%;
+}
+
+.portafolio{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 10%;
+    
+}
+
+.card {
+
+    width: 300px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #ededed;
+    background-color:#012b3b;
+}
+.card:hover {
+    transform: scale(1.07);
+    background-color: #070047;
+}
+
+
+
+
+
+.icons{
+    align-items: center;
+    justify-content: center;
+    font-size: 70px; /* Tamaño de fuente del icono */
+  margin: 20px; /* Espaciado entre los iconos */
+display: flex;
+  background-color:transparent;
+  padding: 20px;
+  text-align: center;
 }
