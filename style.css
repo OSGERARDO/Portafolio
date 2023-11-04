@@ -10,6 +10,23 @@
 body {
     background-color: #081b24;
     color: #ededed;
+    background: linear-gradient(45deg, #02ffea, #17186d, #015343);
+    background-size: 200% 200%;
+    animation: gradientAnimation 10s infinite;
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+  
+    50% {
+      background-position: 100% 50%;
+    }
+  
+    100% {
+      background-position: 0% 50%;
+    }
 }
 
 .header {
@@ -210,17 +227,157 @@ width: 100%;
     background-color: #070047;
 }
 
+.fondo{
+   
+  background-color: rgba(255, 255, 255, 0.5);
+  /* Fondo blanco transparente */
+  border-radius: 15px;
+  /* Bordes redondeados */
+  border: 20px solid transparent;
+  padding: 10px;
+  box-shadow: 5px 2px 25px rgba(0, 0, 0, 0.2);
+}
+}
 
 
 
+.contact{
+
+    height: 100vh;
+    display:block;
+    align-items: center;
+    padding: 10%;
+}
+
+/* Estilos para el contenedor #contacto */
+#contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   
+  }
+  
+  /* Estilos para la sección .contact */
+  .contact {
+background: #ffffff3a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 8px rgba(255, 255, 255, 0.1);
+    width: 80%;
+    max-width: 400px; 
+  }
+  
+  .contact h1 {
+    text-align: center;
+  }
+  
+  .contact form {
+    text-align: left;
+  }
+  
+  .contact label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .contact input[type="text"],
+  .contact input[type="email"],
+  .contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .contact input[type="submit"] {
+    background-color: #0077b5;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .contact input[type="submit"]:hover {
+    background-color: #005d91;
+  }
+  
 
 .icons{
     align-items: center;
     justify-content: center;
-    font-size: 70px; /* Tamaño de fuente del icono */
-  margin: 20px; /* Espaciado entre los iconos */
+    font-size: 70px; 
+  margin: 20px; 
 display: flex;
   background-color:transparent;
   padding: 20px;
   text-align: center;
 }
+
+
+@media (max-width: 768px) {
+    .header {
+        padding: 10px; 
+    }
+
+    .navbar {
+        display: flex; 
+        flex-direction: column; 
+    }
+
+    .navbar a {
+        margin-left: 0; 
+        margin-bottom: 10px; 
+    }
+
+    .home-content h1 {
+        font-size: 24px; 
+    }
+
+    .home-content h3 {
+        font-size: 18px; 
+    }
+
+    .home-content p {
+        font-size: 14px; 
+        margin: 10px 0 20px;
+    }
+
+    .home-content .btn-box {
+        flex-direction: column; 
+    }
+
+    .btn-box a {
+        width: 100%; 
+        margin-bottom: 10px; 
+    }
+
+    .btn-box a::before {
+        display: none; 
+    }
+
+    .home-sci {
+        display: flex; 
+        justify-content: space-around; 
+        margin-top: 20px; 
+    }
+
+    .portafolio {
+        padding: 10px; 
+    }
+
+    .card {
+        width: 100%; 
+        margin: 10px 0;
+    }
+
+    .contact {
+        padding: 10px; 
+        max-width: 100%;
+    }
+}
+
+
+

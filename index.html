@@ -13,8 +13,8 @@
         <a href="#" class="logo">Gerardo.</a>
         <nav class="navbar">
             <a href="#" class="active">Home</a>
-            <a href="#">Portafolio</a>
-            <a href="#">Contacto</a>
+            <a href="#portafolio">Portafolio</a>
+            <a href="#contacto">Contacto</a>
         </nav>
     </header>
 
@@ -24,8 +24,8 @@
             <h3>Desarrollo Web FullStack</h3>
             <p>¡Bienvenido a mi portafolio!  HTML, CSS, JavaScript, Bootstrap, React JS, Node.js, MongoDB y Express. Mi objetivo es crear soluciones web excepcionales para brindar experiencias digitales atractivas y funcionales a mis clientes y usuarios. ¡Explora mi trabajo y descubre lo que puedo hacer por ti!</p>
             <div class="btn-box">
-                <a href="#">contactame</a>
-                <a href="#">Hablemos</a>
+                <a href="#contacto">Contactame</a>
+                <a href="#portafolio">Portafolio</a>
             </div>
         </div>
 <div class="home-sci">
@@ -35,8 +35,9 @@
 </div>
 
     </section>
-
-    <section class="portafolio">
+<div id="portafolio">
+    <div class="fondo">
+        <section class="portafolio">
         <div class="card">
             <h3>Landing page
             </h3>
@@ -52,8 +53,8 @@
         </div>
 
         <div class="card">
-            <h3>DashBoard - Tiempo en Línea </h3>
-            <p>Tiempo en Línea! En esta aplicación web, podrás consultar el tiempo de cualquier ciudad en tiempo real gracias a la conexión con una API meteorológica.</p>
+            <h3>DashBoard - Tiempo</h3>
+            <p>Aplicación web, podrás consultar el tiempo en tiempo real gracias a la conexión con una API meteorológica.</p>
             <a href="https://osgerardo.github.io/Proyecto-3-Dashboard/">Ver más</a>
         </div>
 
@@ -63,6 +64,32 @@
             <a href="https://main--lucky-custard-31b5d1.netlify.app/">Ver más</a>
         </div>
     </section>
+
+    </div>
+ 
+
+</div>
+   
+
+<div id="contacto">
+    <section class="contact">
+        <h1>Contacto</h1>
+        <form action="mailto:nmsosx@gmail.com" method="post" enctype="text/plain">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required><br>
+      
+          <label for="correo"> Correo   :</label>
+          <input type="email" id="correo" name="correo" required><br>
+      
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br>
+      
+          <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+</div>
+
 
 <section class="tecnologias">
     <div class="icons">
@@ -77,7 +104,10 @@
     <a href=""><i class='bx bxl-firebase'></i></a>
     <a href=""><i class='bx bxl-adobe'></i></a>
     </div>
-   
+   <footer>
+    <p>Todos los derechos reservados &copy; 2023 Gerardo Olivares</p>
+  </footer>
 </section>
+
 </body>
 </html>
