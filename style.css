@@ -407,22 +407,24 @@ body {
         height: auto;
         margin: 20px 0;
         margin-top: 60px;
-        
+
     }
+
     .btn-box a {
-        margin-bottom: 5px 0; /* Añade margen inferior entre los botones */
+        margin-bottom: 5px 0;
+        /* Añade margen inferior entre los botones */
     }
 
 
     .home-sci {
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        width: 75%;
-        margin-top: 0px;
-        margin: 45px;
+        position: fixed;
+        flex-direction: column;
+
+        margin: auto;
+        margin-top: auto;
+
     }
-    
+
 
 
     /*segunda parte portafolio*/
