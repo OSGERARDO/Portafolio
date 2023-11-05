@@ -242,6 +242,12 @@ body {
     color: #ededed;
     background-color: #012a3b84;
 }
+a {
+    font-size: 20px;
+    font-weight: bold;
+    color:#b0f000;
+}
+
 
 .card:hover {
     transform: scale(1.07);
