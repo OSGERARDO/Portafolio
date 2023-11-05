@@ -10,7 +10,7 @@
 body {
     background-color: #081b24;
     color: #ededed;
-    background: linear-gradient(45deg, #02ffea, #17186d, #015343);
+    background: linear-gradient(45deg, #02ffea, #17186d, #01ffcc);
     background-size: 200% 200%;
     animation: gradientAnimation 10s infinite;
 }
@@ -43,10 +43,17 @@ body {
 }
 
 .logo {
-    font-size: 25px;
-    color: #ededed;
-    text-decoration: none;
-    font-weight: 600;
+
+    width: 50px;
+    height: 50px;
+    background-image: url('img/126833662.jfif');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .navbar a {
@@ -274,6 +281,7 @@ body {
     box-shadow: 0 8px 8px rgba(255, 255, 255, 0.1);
     width: 80%;
     max-width: 400px;
+    margin-top: 100px;
 }
 
 .contact h1 {
@@ -329,25 +337,27 @@ body {
 @media (max-width: 600px) {
 
 
-
     .header {
         position: fixed;
         top: 0;
         left: 0;
-        width: 130%;
+        width: 100%;
+        height: auto;
         padding: 20px 10%;
-        align-items: center;
+        display: flex;
+
 
     }
 
     .navbar {
+        text-align: center;
         display: flex;
         flex-direction: column;
         background: #081b24e3;
         position: absolute;
         top: 0px;
         left: 0;
-        width: 80%;
+        width: 100%;
 
     }
 
@@ -358,13 +368,14 @@ body {
     }
 
     .home {
-        display: grid;
+        display: flex;
         flex-direction: column;
-        padding: 11px;
+        padding: 6px;
         text-align: center;
         justify-content: center;
         align-items: center;
-
+        height: auto;
+        margin-top: 50px;
     }
 
 
@@ -372,6 +383,7 @@ body {
     .home-content h1 {
         font-size: 34px;
         padding: 50px;
+        margin-top: 50px;
     }
 
     .home-content h3 {
@@ -382,6 +394,7 @@ body {
         font-size: 14px;
         margin: 10px 20px;
 
+
     }
 
 
@@ -389,20 +402,27 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
         width: 100%;
-        height: 100vh;
-        margin: 50px auto;
-
+        height: auto;
+        margin: 20px 0;
+        margin-top: 60px;
+        
     }
+    .btn-box a {
+        margin-bottom: 5px 0; /* Añade margen inferior entre los botones */
+    }
+
 
     .home-sci {
-        display: grid;
-        justify-content: ;
+        display:flex;
+        justify-content: center;
         align-items: center;
-        width: 90%;
-        margin-top: 20px;
-        /* Agrega un margen superior para desplazar el elemento hacia abajo */
+        width: 75%;
+        margin-top: 0px;
+        margin: 45px;
     }
+    
 
 
     /*segunda parte portafolio*/
@@ -413,14 +433,17 @@ body {
         border: 20px solid transparent;
         padding: 10px;
         box-shadow: 5px 2px 25px rgba(0, 0, 0, 0.2);
-        display: flex;
+
 
     }
 
     .portafolio {
         height: auto;
+        display: flex;
+        align-items: center;
         width: auto;
         flex-direction: column;
+        padding: 10%;
 
     }
 
@@ -431,13 +454,10 @@ body {
 
     /*seccion de contacto*/
 
-    .container {
-        
-        margin-top: 20px;
-    }
+
 
     .contact {
-    
+
         height: auto;
         margin-top: 20px;
         padding: 20px;
@@ -446,10 +466,12 @@ body {
 
 
 
-    .tecnologias .icons{
-  text-align: center;
-  flex-wrap: wrap;
-  display: inline-block;
+    .tecnologias .icons {
+        text-align: center;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
 }
