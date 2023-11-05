@@ -13,35 +13,35 @@ body {
     background: linear-gradient(45deg, #02ffea, #17186d, #015343);
     background-size: 200% 200%;
     animation: gradientAnimation 10s infinite;
-  }
-  
-  @keyframes gradientAnimation {
+}
+
+@keyframes gradientAnimation {
     0% {
-      background-position: 0% 50%;
+        background-position: 0% 50%;
     }
-  
+
     50% {
-      background-position: 100% 50%;
+        background-position: 100% 50%;
     }
-  
+
     100% {
-      background-position: 0% 50%;
+        background-position: 0% 50%;
     }
 }
 
 .header {
     position: fixed;
-    top:0;
+    top: 0;
     left: 0;
-    width:100%;
-    padding:20px 10%;
-    background: tra;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
     display: flex;
-    
     justify-content: space-between;
     align-items: center;
     z-index: 100;
 }
+
 .logo {
     font-size: 25px;
     color: #ededed;
@@ -54,7 +54,7 @@ body {
     color: #ffffff;
     text-decoration: none;
     font-weight: 500;
-    margin-left:35px;
+    margin-left: 35px;
     transition: .3s;
 }
 
@@ -68,12 +68,14 @@ body {
     display: flex;
     align-items: center;
     padding: 10%;
-    
+
 }
+
 .home-content {
     background: transparent;
     max-width: 600px;
 }
+
 .home-content h1 {
     font-size: 56px;
     font-weight: 700;
@@ -95,12 +97,16 @@ body {
 .home-content .btn-box {
     display: flex;
     justify-content: space-between;
-width: 345px;
-height: 50px;
+    width: 345px;
+    height: 50px;
 }
 
+
+
+
+
 .btn-box a {
-    position:relative;
+    position: relative;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -119,8 +125,8 @@ height: 50px;
     transition: .5s;
 }
 
-.btn-box a:hover{
-color: #00abf0;
+.btn-box a:hover {
+    color: #00abf0;
 }
 
 
@@ -130,7 +136,7 @@ color: #00abf0;
     color: #00abf0;
 }
 
-.btn-box a:nth-child(2):hover{
+.btn-box a:nth-child(2):hover {
     color: #fdfdfd;
 }
 
@@ -143,7 +149,7 @@ color: #00abf0;
 
 
 .btn-box a::before {
-    content:'';
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -154,7 +160,7 @@ color: #00abf0;
     transition: .5s;
 }
 
-.btn-box a:hover:before{
+.btn-box a:hover:before {
     width: 100%;
 }
 
@@ -184,31 +190,32 @@ color: #00abf0;
     transition: .5s;
 }
 
-.home-sci a :hover{
+.home-sci a :hover {
     color: #081b29;
 }
 
 .home-sci a::before {
-    content:'';
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 0%;
     height: 100%;
-    background:#00abf0;
+    background: #00abf0;
     z-index: -1;
     transition: .5s;
 }
-.home-sci a:hover::before{
-width: 100%;
+
+.home-sci a:hover::before {
+    width: 100%;
 }
 
-.portafolio{
+.portafolio {
     height: 100vh;
     display: flex;
     align-items: center;
     padding: 10%;
-    
+
 }
 
 .card {
@@ -217,34 +224,35 @@ width: 100%;
     margin: 20px;
     border: 1px solid #ccc;
     padding: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.112);
     text-align: center;
     color: #ededed;
-    background-color:#012b3b;
+    background-color: #012a3b84;
 }
+
 .card:hover {
     transform: scale(1.07);
     background-color: #070047;
 }
 
-.fondo{
-   
-  background-color: rgba(255, 255, 255, 0.5);
-  /* Fondo blanco transparente */
-  border-radius: 15px;
-  /* Bordes redondeados */
-  border: 20px solid transparent;
-  padding: 10px;
-  box-shadow: 5px 2px 25px rgba(0, 0, 0, 0.2);
+.fondo {
+
+    background-color: rgba(255, 255, 255, 0.189);
+    /* Fondo blanco transparente */
+    border-radius: 15px;
+    /* Bordes redondeados */
+    border: 20px solid transparent;
+    padding: 10px;
+    box-shadow: 5px 2px 25px rgba(0, 0, 0, 0.2);
 }
-}
 
 
 
-.contact{
+
+.contact {
 
     height: 100vh;
-    display:block;
+    display: block;
     align-items: center;
     padding: 10%;
 }
@@ -255,93 +263,115 @@ width: 100%;
     justify-content: center;
     align-items: center;
     height: 100vh;
-   
-  }
-  
-  /* Estilos para la sección .contact */
-  .contact {
-background: #ffffff3a;
+
+}
+
+/* Estilos para la sección .contact */
+.contact {
+    background: #ffffff3a;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 8px 8px rgba(255, 255, 255, 0.1);
     width: 80%;
-    max-width: 400px; 
-  }
-  
-  .contact h1 {
+    max-width: 400px;
+}
+
+.contact h1 {
     text-align: center;
-  }
-  
-  .contact form {
+}
+
+.contact form {
     text-align: left;
-  }
-  
-  .contact label {
+}
+
+.contact label {
     display: block;
     margin-bottom: 5px;
-  }
-  
-  .contact input[type="text"],
-  .contact input[type="email"],
-  .contact textarea {
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 3px;
-  }
-  
-  .contact input[type="submit"] {
+}
+
+.contact input[type="submit"] {
     background-color: #0077b5;
     color: #fff;
     padding: 10px 20px;
     border: none;
     border-radius: 3px;
     cursor: pointer;
-  }
-  
-  .contact input[type="submit"]:hover {
-    background-color: #005d91;
-  }
-  
+}
 
-.icons{
+.contact input[type="submit"]:hover {
+    background-color: #005d91;
+}
+
+
+.icons {
     align-items: center;
     justify-content: center;
-    font-size: 70px; 
-  margin: 20px; 
-display: flex;
-  background-color:transparent;
-  padding: 20px;
-  text-align: center;
+    font-size: 70px;
+    margin: 20px;
+    display: flex;
+    background-color: transparent;
+    padding: 20px;
+    text-align: center;
 }
 
 
 /* Estilos específicos para dispositivos móviles */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
+
+
+
     .header {
-        padding: 10px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 130%;
+        padding: 20px 10%;
+        align-items: center;
+
     }
 
     .navbar {
         display: flex;
         flex-direction: column;
-        background: #081b24;
+        background: #081b24e3;
         position: absolute;
-        top: 60px;
+        top: 0px;
         left: 0;
-        width: 100%;
-        z-index: 1;
+        width: 80%;
+
     }
 
     .navbar a {
         margin-left: 0;
-        margin-bottom: 15px;
+        margin-bottom: 5px;
         text-align: center;
     }
 
+    .home {
+        display: grid;
+        flex-direction: column;
+        padding: 11px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+
     .home-content h1 {
-        font-size: 24px;
+        font-size: 34px;
+        padding: 50px;
     }
 
     .home-content h3 {
@@ -350,40 +380,76 @@ display: flex;
 
     .home-content p {
         font-size: 14px;
-        margin: 10px 0 20px;
+        margin: 10px 20px;
+
     }
 
-    .home-content .btn-box {
-        flex-direction: column;
-    }
 
-    .btn-box a {
+    .btn-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 100%;
-        margin-bottom: 10px;
+        height: 100vh;
+        margin: 50px auto;
+
     }
 
     .home-sci {
-        display: flex;
-        justify-content: space-around;
+        display: grid;
+        justify-content: ;
+        align-items: center;
+        width: 90%;
         margin-top: 20px;
+        /* Agrega un margen superior para desplazar el elemento hacia abajo */
+    }
+
+
+    /*segunda parte portafolio*/
+
+    .fondo {
+        background-color: rgba(255, 255, 255, 0.189);
+        border-radius: 15px;
+        border: 20px solid transparent;
+        padding: 10px;
+        box-shadow: 5px 2px 25px rgba(0, 0, 0, 0.2);
+        display: flex;
+
     }
 
     .portafolio {
-        padding: 10px;
+        height: auto;
+        width: auto;
+        flex-direction: column;
+
     }
 
-    .card {
-        width: 100%;
-        margin: 10px 0;
+
+
+
+
+
+    /*seccion de contacto*/
+
+    .container {
+        
+        margin-top: 20px;
     }
 
     .contact {
-        padding: 10px;
+    
+        height: auto;
+        margin-top: 20px;
+        padding: 20px;
         max-width: 100%;
     }
+
+
+
+    .tecnologias .icons{
+  text-align: center;
+  flex-wrap: wrap;
+  display: inline-block;
+    }
+
 }
-
-
-
-
-
